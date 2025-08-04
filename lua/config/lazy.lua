@@ -8,6 +8,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { import = "config.cmp" },
+  { import = "config.lsp" },
+  { import = "config.formatting" },
+
   -- Temel eklentiler
   { "tpope/vim-sensible" },
   { "preservim/nerdtree" },
@@ -23,5 +27,5 @@ require("lazy").setup({
   { "hrsh7th/cmp-cmdline" },
   { "hrsh7th/cmp-vsnip" },
   { "hrsh7th/vim-vsnip" },
-})
+ })
 
